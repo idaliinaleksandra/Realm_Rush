@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1669558957502554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 10}
+  m_LocalPosition: {x: 10, y: 0, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4861500043858148}
@@ -229,9 +229,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToPan: {fileID: 4861500043858148}
-  target: {fileID: 0}
-  attackRange: 10
+  attackRange: 30
   projectileParticle: {fileID: 198852078665659486}
+  pewSFX: {fileID: 0}
+  baseWaypoint: {fileID: 0}
 --- !u!198 &198852078665659486
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3805,7 +3806,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    minKillSpeed: 0
+    minKillSpeed: 1000
     maxKillSpeed: 10000
     radiusScale: 1
     collidesWith:
